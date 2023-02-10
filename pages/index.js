@@ -85,7 +85,7 @@ export default function Home() {
     <div>
       <Head>
         <title>ChatGPT Playground</title>
-        <link rel="icon" href="/bosch.png" />
+        {/* <link rel="icon" href="/bosch.png" /> */}
       </Head>
       <div style={{
             width: '100%',
