@@ -39,11 +39,12 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       prompt,
       model,
-      // temperature,
-      // max_tokens,
-      // top_p,
-      // frequency_penalty,
-      // presence_penalty
+      temperature: 0,
+      max_tokens: 100,
+      top_p: 1,
+      frequency_penalty: 0.0,
+      presence_penalty: 0.0,
+      stop: ["\n"],
     });
     res.status(200).json({ result: completion.data.choices[0].text });
     // res.status(200).json({ result: prompt });
