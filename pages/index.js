@@ -97,12 +97,12 @@ export default function Home() {
             backgroundPosition: '50%',
             marginBottom:'10px'
         }}></div>
-      <img src="/bosch.png" className={styles.icon} style={{width:'200px'}} />
+      {/* <img src="/bosch.png" className={styles.icon} style={{width:'200px'}} /> */}
       <main className={styles.main}>
         
         <h3>ChatGPT Playground</h3>
 
-        <div style={{fontWeight:'bold',fontSize:'25px',marginBottom:'20px'}}>Bosch China Digital Community</div>
+        {/* <div style={{fontWeight:'bold',fontSize:'25px',marginBottom:'20px'}}>Bosch China Digital Community</div> */}
         <div style={{position:'fixed',bottom:'80px'}}>快来吧奔腾电脑,就让它们代替我来思考 - New Boy (朴树,1999)</div>
         <div style={{position:'fixed',bottom:'50px'}}>Developed by <a href="mailto:he.sun@cn.bosch.com">SUN He (ATMO-3CN/PJ-CDT)</a></div>
         {/* <h3>ChatGPT Market Sniffer</h3> */}
