@@ -48,9 +48,9 @@ export default function Home() {
           animal:animalInput,
           config:{
             model: "text-davinci-003",
-            prompt:`Summarize this article into bullet points:
-                    Article: ${animalInput}
-                    Summary:`,
+            prompt:`
+                     ${animalInput}
+                    `,
             temperature: 0,
             max_tokens: 60,
             top_p: 1.0,
