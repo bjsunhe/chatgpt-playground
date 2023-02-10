@@ -103,17 +103,18 @@ export default function Home() {
         <h3>ChatGPT Playground</h3>
 
         <div style={{fontWeight:'bold',fontSize:'25px',marginBottom:'20px'}}>Bosch China Digital Community</div>
+        <div style={{position:'fixed',bottom:'80px'}}>快来吧奔腾电脑,就让它们代替我来思考 - New Boy (朴树,1999)</div>
         <div style={{position:'fixed',bottom:'50px'}}>Developed by <a href="mailto:he.sun@cn.bosch.com">SUN He (ATMO-3CN/PJ-CDT)</a></div>
         {/* <h3>ChatGPT Market Sniffer</h3> */}
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name=""
-            placeholder="Enter an article"
+            placeholder="Enter your question"
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" disabled={inputDisabled} value="Sniff" />
+          <input type="submit" disabled={inputDisabled} value="Answer" />
         </form>
         {/* <div className={styles.result}>{result}</div> */}
         <div >
