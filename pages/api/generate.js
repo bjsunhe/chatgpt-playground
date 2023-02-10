@@ -44,7 +44,6 @@ export default async function (req, res) {
       top_p: 1,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
-      stop: ["\n"],
     });
     res.status(200).json({ result: completion.data.choices[0].text });
     // res.status(200).json({ result: prompt });
