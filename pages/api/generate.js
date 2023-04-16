@@ -37,7 +37,7 @@ export default async function (req, res) {
 
   try {
     console.log(req.body)
-    const completion = await openai.ChatCompletion.create({
+    const completion = await openai.createCompletion({
       prompt,
       model,
       temperature: 0,
