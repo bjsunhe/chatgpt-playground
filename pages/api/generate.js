@@ -19,7 +19,7 @@ export default async function (req, res) {
   const prompt=req.body.config.prompt || '';
   const model= req.body.config.model || "text-davinci-003";
   const temperature = req.body.config.temperature || '0';
-  const max_tokens = req.body.config.max_tokens || 4096;
+  const max_tokens = req.body.config.max_tokens || 2048;
   const top_p = req.body.config.top_p || 1.0;
   const frequency_penalty = req.body.config.frequency_penalty || 0.0;
   const presence_penalty = req.body.config.presence_penalty || 0.0;
@@ -41,7 +41,7 @@ export default async function (req, res) {
       prompt,
       model,
       temperature: 0,
-      max_tokens: 4096,
+      max_tokens: 2048,
       top_p: 1,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
