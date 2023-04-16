@@ -123,6 +123,9 @@ export default function Home() {
             searchHistory.map((h,index)=>(
               <div key={index} className={styles.card}>
                 <div className={styles.result}>{h.title}</div>
+                <div>------------------</div>
+                <div>------------------</div>
+                <div>------------------</div>
                 <div className={styles.result}>{h.content}</div>
               </div>
             ))
