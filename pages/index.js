@@ -47,12 +47,13 @@ export default function Home() {
         body: JSON.stringify({ 
           animal:animalInput,
           config:{
-            model: "text-davinci-003",
+            // model: "text-davinci-003",
+            model: "gpt-3.5-turbo",
             prompt:`
                      ${animalInput}
                     `,
             temperature: 0,
-            max_tokens: 60,
+            max_tokens: 4096,
             top_p: 1.0,
             frequency_penalty: 0.0,
             presence_penalty: 0.0,

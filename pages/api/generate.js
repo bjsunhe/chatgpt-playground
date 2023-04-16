@@ -19,7 +19,7 @@ export default async function (req, res) {
   const prompt=req.body.config.prompt || '';
   const model= req.body.config.model || "text-davinci-003";
   const temperature = req.body.config.temperature || '0';
-  const max_tokens = req.body.config.max_tokens || 60;
+  const max_tokens = req.body.config.max_tokens || 4096;
   const top_p = req.body.config.top_p || 1.0;
   const frequency_penalty = req.body.config.frequency_penalty || 0.0;
   const presence_penalty = req.body.config.presence_penalty || 0.0;
@@ -36,15 +36,16 @@ export default async function (req, res) {
   }
 
   try {
+    console.log(req.body)
     const completion = await openai.createCompletion({
       prompt,
       model,
       temperature: 0,
-      max_tokens: 100,
+      max_tokens: 4096,
       top_p: 1,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
-      'max_tokens':2048
+      // 'max_tokens':2048
     });
     res.status(200).json({ result: completion.data.choices[0].text });
     // res.status(200).json({ result: prompt });
